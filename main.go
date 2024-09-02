@@ -1,6 +1,10 @@
 package main
 
+//imports the function FMT
+
 import "fmt"
+
+//Prints text to the console.
 
 func main() {
 
