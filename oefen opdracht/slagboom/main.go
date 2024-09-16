@@ -29,6 +29,8 @@ func scanteken(kents string) bool {
 
 func main() {
 
+	fmt.Print("Welcome to Fonteyn, Het beste vakantiepark volgens de consumentenbond\n")
+
 	var kenteken string
 	fmt.Print("Voer uw kenteken in: ")
 	fmt.Scanln(&kenteken)
@@ -36,8 +38,6 @@ func main() {
 	if scanteken(kenteken) {
 
 		tijdophalen := time.Now().Hour()
-
-		fmt.Print("Welcome to Fonteyn, Het beste vakantiepark volgens de consumentenbond\n")
 
 		switch {
 

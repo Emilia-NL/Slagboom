@@ -3,14 +3,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/elliotforbes/athena/port"
+	"github.com/Emilia-NL/Slagboom/portsniffer/port"
 )
 
 func main() {
 
 	fmt.Println("Port Scanner in Go")
 
-	open := port.ScanPort("tcp", "localhost", 1313)
-	fmt.Printf("Port Open %t\n", open)
+	results := port.IniteleScan("localhost")
 
+	fmt.Println(results)
 }
